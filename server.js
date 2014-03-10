@@ -89,4 +89,7 @@ app.get('/schedule/:route',function(req,res,next){
 		res.jsonp(404,{status:"error",details:err});
 	});
 });
-app.listen(process.env['PORT'] || 3000, '127.0.0.1');
+
+app.listen(process.env.PORT || 3000);
+
+//app.listen(process.env['PORT'] || 3000, '127.0.0.1');
